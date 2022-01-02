@@ -22,10 +22,11 @@ public class SolutionLongestPalindromicSubstring {
     {
         int L = left, R = right;
 
+        // if current is Palindromic, expand two pointer to side
         while ( L >= 0 && R < s.length() && s.charAt(L) == s.charAt(R) ) {
             L--;
             R++;
         }
-        return R - L - 1; // for odd 1 3 5 7 9
+        return R - L - 1; // for odd 1, 3, 5... for even 2, 4, 6...
     }
 }
