@@ -16,4 +16,14 @@ public class SolutionLongestPalindromicSubstringTest {
         var actual = s.longestPalindrome(input);
         assertEquals("aba", actual);
     }
+
+    @Test
+    public void testLongestPalindrome2() {
+        SolutionLongestPalindromicSubstring s = new SolutionLongestPalindromicSubstring();
+        
+        String input = "aba";
+
+        var actual = s.longestPalindrome(input);
+        assertEquals("aba", actual);
+    }
 }
