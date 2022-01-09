@@ -2,8 +2,6 @@ package test;
 
 import static org.junit.Assert.assertEquals;
 
-import java.nio.file.FileSystemAlreadyExistsException;
-
 import org.junit.Test;
 
 import src.SolutionValidParentheses;
