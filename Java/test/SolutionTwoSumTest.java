@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import src.SolutionTwoSum;
 
-public class SolutionTest {
+public class SolutionTwoSumTest {
     @Test
     public void testTwoSum() {
         int[] nums = new int[] { 2, 7, 11, 5};
