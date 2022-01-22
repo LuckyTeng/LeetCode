@@ -3,7 +3,7 @@ package src;
 import java.util.LinkedList;
 import java.util.List;
 
-@ExampleNumber(57)
+@LeetCodeInformation(Number = 57, Url = "https://leetcode.com/problems/insert-interval/")
 public class SolutionInsertInterval {
     public int[][] insert(int[][] intervals, int[] newInterval) {
         int n = intervals.length;

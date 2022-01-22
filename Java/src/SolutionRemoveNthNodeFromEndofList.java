@@ -1,5 +1,6 @@
 package src;
 
+@LeetCodeInformation(Number = 19, Url = "https://leetcode.com/problems/remove-nth-node-from-end-of-list/")
 public class SolutionRemoveNthNodeFromEndofList {
     public class ListNode {
         public int val;

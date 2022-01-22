@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@LeetCodeInformation(Number = 49, Url = "https://leetcode.com/problems/group-anagrams/")
 public class SolutionGroupAnagrams {
     public List<List<String>> groupAnagrams(String[] strs) {
         if ( strs == null || strs.length < 1 ) return new ArrayList<>();

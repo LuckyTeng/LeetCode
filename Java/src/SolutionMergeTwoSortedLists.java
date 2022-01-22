@@ -1,5 +1,6 @@
 package src;
 
+@LeetCodeInformation(Number = 21, Url = "https://leetcode.com/problems/merge-two-sorted-lists/")
 public class SolutionMergeTwoSortedLists {
     public class ListNode {
         public int val;

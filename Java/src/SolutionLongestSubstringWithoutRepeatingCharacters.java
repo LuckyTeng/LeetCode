@@ -1,5 +1,6 @@
 package src;
 
+@LeetCodeInformation(Number = 3, Url = "https://leetcode.com/problems/longest-substring-without-repeating-characters/")
 public class SolutionLongestSubstringWithoutRepeatingCharacters {
     public int LengthOfLongestSubstring(String s) {
         int ans = 0;

@@ -1,5 +1,6 @@
 package src;
 
+@LeetCodeInformation(Number = 33, Url = "https://leetcode.com/problems/search-in-rotated-sorted-array/")
 public class SolutionSearchinRotatedSortedArray {
     public int search(int[] nums, int target) {
         int lo = 0, hi = nums.length;

@@ -3,6 +3,7 @@ package src;
 import java.util.ArrayList;
 import java.util.List;
 
+@LeetCodeInformation(Number = 54, Url = "https://leetcode.com/problems/spiral-matrix/")
 public class SolutionSpiralMatrix {
     public List<Integer> spiralOrder(int[][] matrix) {
 

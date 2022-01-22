@@ -3,6 +3,7 @@ package src;
 import java.util.Arrays;
 import java.util.LinkedList;
 
+@LeetCodeInformation(Number = 56, Url = "https://leetcode.com/problems/merge-intervals/")
 public class SolutionMergeIntervals {
     public int[][] merge(int[][] intervals) {    
         Arrays.sort(intervals, (a,b) -> Integer.compare(a[0], b[0]));

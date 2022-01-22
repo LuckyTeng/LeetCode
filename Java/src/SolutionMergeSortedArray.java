@@ -1,5 +1,6 @@
 package src;
 
+@LeetCodeInformation(Number = 56, Url = "https://leetcode.com/problems/merge-intervals/")
 public class SolutionMergeSortedArray {
     public class ListNode {
         public int val;

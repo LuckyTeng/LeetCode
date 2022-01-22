@@ -3,6 +3,7 @@ package src;
 import java.util.HashMap;
 import java.util.Map;
 
+@LeetCodeInformation(Number = 1, Url = "https://leetcode.com/problems/two-sum/")
 public class SolutionTwoSum {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();

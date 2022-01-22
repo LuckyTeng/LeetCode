@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+@LeetCodeInformation(Number = 1, Url = "https://leetcode.com/problems/two-sum/")
 public class SolutionThreeSum {
     public List<List<Integer>> threeSum(int[] nums) {
         var ans = new ArrayList<List<Integer>>();

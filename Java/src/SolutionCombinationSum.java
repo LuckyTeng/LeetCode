@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-
+@LeetCodeInformation(Number = 39, Url = "https://leetcode.com/problems/combination-sum/")
 public class SolutionCombinationSum {
     private void backtrack(List<List<Integer>> result, List<Integer> tempList, int[] candidates, int remain, int start){
         if ( remain < 0 ) return;

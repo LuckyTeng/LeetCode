@@ -1,5 +1,6 @@
 package src;
 
+@LeetCodeInformation(Number = 5, Url = "https://leetcode.com/problems/longest-palindromic-substring/")
 public class SolutionLongestPalindromicSubstring {
     public String longestPalindrome(String s) {
         if ( s == null || s.length() < 1 ) return "";

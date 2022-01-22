@@ -1,5 +1,6 @@
 package src;
 
+@LeetCodeInformation(Number = 53, Url = "https://leetcode.com/problems/maximum-subarray/")
 public class SolutionMaxSubArray {
     public int MaxSubArray(int[] nums) {
         if ( nums.length <= 1 ) return nums[0];

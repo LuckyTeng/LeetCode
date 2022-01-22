@@ -1,5 +1,6 @@
 package src;
 
+@LeetCodeInformation(Number = 48, Url = "https://leetcode.com/problems/rotate-image/")
 public class SolutionRotateImage {
     public void rotate(int[][] matrix) {
         int n = matrix.length - 1; // 3 = 2, 4 = 3

@@ -9,7 +9,8 @@ import java.lang.annotation.ElementType;
 @Documented
 @Retention(RetentionPolicy.SOURCE)
 @Target(ElementType.TYPE_USE)
-public @interface ExampleNumber
+public @interface LeetCodeInformation
 {
-    int value();
+    int Number();
+    String Url();
 }
