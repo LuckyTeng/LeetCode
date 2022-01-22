@@ -10,14 +10,14 @@ public class SolutionMergeIntervals {
         LinkedList<int[]> ans = new LinkedList<int[]>();
         
         for (int i = 0; i < intervals.length; i++) {
-            if ( ans.isEmpty() || ans.getLast()[1] < intervals[i][0])
+            if ( ans.isEmpty() || ans.getLast()[1] < intervals[i][0]) // first or non-overlap
                 ans.add(intervals[i]);
             else {
-                ans.getLast()[1] = Math.max(ans.getLast()[1], intervals[i][1]);
+                ans.getLast()[1] = Math.max(ans.getLast()[1], intervals[i][1]); // extend right boundary
             }
         }
     
-        return ans.toArray(new int[0][]);
+        return ans.toArray(new int[0][]); // using type to convert to array
     }
 
 }
