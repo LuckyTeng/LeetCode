@@ -3,6 +3,7 @@ package src;
 import java.util.LinkedList;
 import java.util.List;
 
+@ExampleNumber(57)
 public class SolutionInsertInterval {
     public int[][] insert(int[][] intervals, int[] newInterval) {
         int n = intervals.length;
