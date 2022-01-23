@@ -25,6 +25,7 @@ public class SolutionMinimumWindowSubstring {
             int count = windowCount.getOrDefault(c, 0);
             windowCount.put(c, count+1);
 
+            // Don't compare reference type with ==, use equals instead
             if ( dictT.containsKey(c) && windowCount.get(c).intValue() == dictT.get(c).intValue()) {
                 formed++;
             }
