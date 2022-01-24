@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Queue;
 
+@LeetCodeInformation(Number = 105, Url = "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/")
 public class SolutionBinaryTreeLevelOrderTraversal {
     public class TreeNode {
         int val;
