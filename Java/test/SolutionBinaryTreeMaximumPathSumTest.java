@@ -16,7 +16,7 @@ public class SolutionBinaryTreeMaximumPathSumTest {
         root.left = new TreeNode(2);
         root.right = new TreeNode(3);
 
-        var actual = s.MaxPathSum(root);
+        var actual = s.maxPathSum(root);
         
         int expected = 6;
 
@@ -33,7 +33,7 @@ public class SolutionBinaryTreeMaximumPathSumTest {
         root.right.left = new TreeNode(15);
         root.right.right = new TreeNode(7);
 
-        var actual = s.MaxPathSum(root);
+        var actual = s.maxPathSum(root);
         
         int expected = 42;
 
