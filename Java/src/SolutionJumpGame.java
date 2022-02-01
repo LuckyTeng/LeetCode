@@ -1,5 +1,6 @@
 package src;
 
+@LeetCodeInformation(Number = 55, Url = "https://leetcode.com/problems/jump-game/")
 public class SolutionJumpGame {
     public boolean CanJump(int[] nums) {
         int n = nums.length;

@@ -3,6 +3,7 @@ package src;
 import java.util.HashSet;
 import java.util.Set;
 
+@LeetCodeInformation(Number = 141, Url = "https://leetcode.com/problems/linked-list-cycle/")
 public class SolutionLinkedListCycle {
     public boolean hasCycle(ListNode head) {
         int solution = 0;
