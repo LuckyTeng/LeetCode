@@ -1,5 +1,6 @@
 package src;
 
+@LeetCodeInformation(Number = 125, Url = "https://leetcode.com/problems/valid-palindrome/")
 public class SolutionValidPalindrome {
     public boolean isPalindrome(String s) {
         String lc = s.toLowerCase();
