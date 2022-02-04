@@ -28,4 +28,15 @@ public class SolutionHouseRobberTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void testRob2() {
+        var sol = new SolutionHouseRobber();
+
+        int[] nums = {1};
+        var actual = sol.rob(nums);
+        int expected = 1;
+
+        assertEquals(expected, actual);
+    }
 }
