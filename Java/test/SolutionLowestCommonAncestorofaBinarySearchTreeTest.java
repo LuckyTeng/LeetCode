@@ -2,8 +2,6 @@ package test;
 
 import static org.junit.Assert.assertSame;
 
-import java.util.LinkedList;
-
 import org.junit.Test;
 
 import src.CommonHelper;
