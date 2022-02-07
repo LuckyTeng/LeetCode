@@ -2,6 +2,10 @@ package src;
 
 import java.util.LinkedList;
 
+/**   
+    Common Helper functions.
+    @author teng
+ */
 final public class CommonHelper {
     public static TreeNode BuildTree(Integer[] tree) {
         TreeNode root = null ;
