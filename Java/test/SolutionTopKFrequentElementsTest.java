@@ -15,7 +15,7 @@ public class SolutionTopKFrequentElementsTest {
         int k = 2;
 
         var actuals = sol.topKFrequent(nums, k);
-        int[] expecteds = {1,2};
+        int[] expecteds = {4,1};
 
         assertArrayEquals(expecteds, actuals);
     }
