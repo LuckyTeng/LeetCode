@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import src.SolutionMergeSortedArray;
 
-public class SolutionMergeSortedArray$SolutionDivConquerTest {
+public class SolutionMergeSortedArrayTest {
     @Test
     public void testMergeKLists() {
         SolutionMergeSortedArray s = new SolutionMergeSortedArray();
