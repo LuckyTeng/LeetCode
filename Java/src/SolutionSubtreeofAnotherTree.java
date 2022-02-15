@@ -1,0 +1,19 @@
+package src;
+
+@LeetCodeInformation(Number = 572, Url = "https://leetcode.com/problems/subtree-of-another-tree/")
+public class SolutionSubtreeofAnotherTree {
+    public boolean isSubtree(TreeNode root, TreeNode subRoot) {
+        if ( root == null ) return false;
+        
+        return isSame(root, subRoot) || isSubtree(root.left, subRoot) || isSubtree(root.right, subRoot);
+    }
+
+    private boolean isSame(TreeNode root, TreeNode subRoot) {
+        if ( root == null && subRoot == null ) return true;
+        if ( root == null || subRoot == null ) return false;
+
+        if ( root.val != subRoot.val ) return false;
+
+        return isSame(root.left, subRoot.left) && isSame(root.right, subRoot.right);
+    }
+}
