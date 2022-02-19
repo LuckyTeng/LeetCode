@@ -5,19 +5,19 @@ import java.util.Map;
 
 @LeetCodeInformation(Number = 1, Url = "https://leetcode.com/problems/two-sum/")
 public class SolutionTwoSum {
+
     public int[] twoSum(int[] nums, int target) {
-        Map<Integer, Integer> map = new HashMap<>();
+        Map<Integer,Integer> hash = new HashMap<>();
 
-        for( int i = 0; i < nums.length; i++) {
-            map.put(nums[i], i);
-        }
+        for (int i = 0; i < nums.length; i++) {
+            int comp = target - nums[i];
 
-        for ( int i = 0; i < nums.length; i++) {
-            int complement = target - nums[i];
-            if ( map.containsKey(complement) && map.get(complement) != i) {
-                return new int[] { i, map.get(complement)};
+            if ( hash.containsKey(comp) ) {
+                return new int[] { i, hash.get(comp)};
             }
-        }
-        throw new IllegalArgumentException("No two sum solution");
+            hash.put(nums[i], i ); // add later, cuz self can't be self
+        }    
+
+        return new int[]{};
     }
 }
