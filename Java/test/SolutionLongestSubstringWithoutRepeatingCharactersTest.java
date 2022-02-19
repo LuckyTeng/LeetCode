@@ -15,4 +15,22 @@ public class SolutionLongestSubstringWithoutRepeatingCharactersTest {
         var actual = s.LengthOfLongestSubstring(input);
         assertEquals(actual, 3);
     }
+
+    @Test
+    public void testLengthOfLongestSubstring1() {
+        SolutionLongestSubstringWithoutRepeatingCharacters s = new SolutionLongestSubstringWithoutRepeatingCharacters();
+
+        String input = "bbbbb";
+        var actual = s.LengthOfLongestSubstring(input);
+        assertEquals(actual, 1);
+    }
+
+    @Test
+    public void testLengthOfLongestSubstring2() {
+        SolutionLongestSubstringWithoutRepeatingCharacters s = new SolutionLongestSubstringWithoutRepeatingCharacters();
+
+        String input = "pwwkew";
+        var actual = s.LengthOfLongestSubstring(input);
+        assertEquals(actual, 3);
+    }
 }
