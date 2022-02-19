@@ -43,4 +43,19 @@ final public class CommonHelper {
 
         return root;
     }
+
+    public static ListNode BuildListNode(int[] list) {
+        ListNode head = new ListNode(-1);
+        ListNode curr = head;
+        
+        if ( list == null ) return head;
+
+        for (int i = 0; i < list.length; i++) {
+            ListNode tmp = new ListNode(list[i]);
+            curr.next = tmp;
+            curr = curr.next;
+        }
+
+        return head.next;
+    }
 }
