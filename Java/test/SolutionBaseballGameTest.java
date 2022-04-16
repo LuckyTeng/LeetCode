@@ -4,9 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import src.CommonHelper;
 import src.SolutionBaseballGame;
-import src.TreeNode;
 
 public class SolutionBaseballGameTest {
     @Test
