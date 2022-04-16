@@ -8,7 +8,7 @@ import java.util.LinkedList;
  */
 final public class CommonHelper {
     public static TreeNode BuildTree(Integer[] tree) {
-        TreeNode root = null ;
+    TreeNode root = null ;
         if ( tree.length == 0 ) return root;
         if ( tree.length == 1 ) {
             root = new TreeNode(tree[0]);

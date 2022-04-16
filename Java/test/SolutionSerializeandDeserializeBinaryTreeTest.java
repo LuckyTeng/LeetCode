@@ -7,7 +7,7 @@ import org.junit.Test;
 import src.CommonHelper;
 import src.SolutionSerializeandDeserializeBinaryTree;
 
-public class SolutionSerializeandDeserializeBinaryTree$CodecTest {
+public class SolutionSerializeandDeserializeBinaryTreeTest {
     @Test
     public void testCodec() {
         var sol = new SolutionSerializeandDeserializeBinaryTree();

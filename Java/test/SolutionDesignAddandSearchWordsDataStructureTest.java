@@ -7,7 +7,7 @@ import org.junit.Test;
 import src.SolutionDesignAddandSearchWordsDataStructure;
 import src.SolutionDesignAddandSearchWordsDataStructure.WordDictionary;
 
-public class SolutionDesignAddandSearchWordsDataStructure$WordDictionaryTest {
+public class SolutionDesignAddandSearchWordsDataStructureTest {
     @Test
     public void testWordDictionary() {
         var sol = new SolutionDesignAddandSearchWordsDataStructure();

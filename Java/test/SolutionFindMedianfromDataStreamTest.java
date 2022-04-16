@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import src.SolutionFindMedianfromDataStream;
 
-public class SolutionFindMedianfromDataStream$MedianFinderTest {
+public class SolutionFindMedianfromDataStreamTest {
     @Test
     public void testMedianFinder() {
         var sol = new SolutionFindMedianfromDataStream();
