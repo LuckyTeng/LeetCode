@@ -11,27 +11,14 @@ public class SolutionValidParentheses {
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
 
-            if ( c == '(' || c == '[' || c == '{' ) {
-                stack.push(c);
-                continue;
-            }
-            
-            if ( stack.size() <= 0 ) return false; // no pair
-
-            Character p = stack.peek();
-            Character ppair = '\0';
-            if ( c == ')' )
-                ppair = '(';
-            else if ( c == ']' )
-                ppair = '[';
-            else if ( c == '}' )
-                ppair = '{';
-
-            if ( p == ppair )
-                stack.pop();
-            else
-                return false; // no pair found
-            
+            if (c == '(') {
+                stack.push(')');
+            } else if (c == '[') {
+                stack.push(']');
+            } else if (c == '{') {
+                stack.push('}');
+            } else if (stack.isEmpty() || stack.pop() != c)
+                return false;
         }
         return stack.size() == 0;
     }
