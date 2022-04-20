@@ -44,6 +44,43 @@ final public class CommonHelper {
         return root;
     }
 
+    public static TreeLinkNode BuildTreeLinkNode(Integer[] tree) {
+        TreeLinkNode root = null ;
+            if ( tree.length == 0 ) return root;
+            if ( tree.length == 1 ) {
+                root = new TreeLinkNode(tree[0]);
+                return root;
+            }
+    
+            root = new TreeLinkNode();
+            int i = 1;
+            int n = tree.length;
+    
+            LinkedList<TreeLinkNode> queue = new LinkedList<>();
+    
+            root.val = tree[0];
+            queue.addFirst(root);
+    
+            while ( !queue.isEmpty() ) {
+                var node = queue.removeLast();
+                
+                if ( i >= n ) break;
+                if ( tree[i] != null ) {
+                    node.left = new TreeLinkNode(tree[i]);
+                    queue.addFirst(node.left);
+                }
+                i++;
+                if ( i >= n ) break;
+                if ( tree[i] != null ) {
+                    node.right = new TreeLinkNode(tree[i]);
+                    queue.addFirst(node.right);
+                }
+                i++;
+            }
+    
+            return root;
+        }
+
     public static ListNode BuildListNode(int[] list) {
         ListNode head = new ListNode(-1);
         ListNode curr = head;
