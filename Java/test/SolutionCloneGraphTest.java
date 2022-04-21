@@ -25,14 +25,14 @@ public class SolutionCloneGraphTest {
         var node3 = new Node(3);
         var node4 = new Node(4);
 
-        node1.neighbors.add(node2);
-        node1.neighbors.add(node4);
-        node2.neighbors.add(node1);
-        node2.neighbors.add(node3);
-        node3.neighbors.add(node2);
-        node3.neighbors.add(node4);
-        node4.neighbors.add(node1);
-        node4.neighbors.add(node3);
+        node1.children.add(node2);
+        node1.children.add(node4);
+        node2.children.add(node1);
+        node2.children.add(node3);
+        node3.children.add(node2);
+        node3.children.add(node4);
+        node4.children.add(node1);
+        node4.children.add(node3);
 
         var node = s.cloneGraph(node1);
 
@@ -75,8 +75,8 @@ public class SolutionCloneGraphTest {
             node2 = map2.get(node.val);
             assertEquals(node.val, node2.val);
             assertNotSame("obj not deep clone", node, node2);
-            for (Node neighbor : node.neighbors) {
-                assertEquals(true, isInNeighbors(neighbor.val, node2.neighbors)); 
+            for (Node neighbor : node.children) {
+                assertEquals(true, isInNeighbors(neighbor.val, node2.children)); 
                 if ( !map1.containsKey(neighbor.val) ) {
                     map1.put(neighbor.val, neighbor);
                     stack.push(neighbor);
@@ -95,7 +95,7 @@ public class SolutionCloneGraphTest {
         while ( stack.size() != 0 ) {
             node = stack.pop();
 
-            for (Node neighbor : node.neighbors) {
+            for (Node neighbor : node.children) {
                 if ( !map.containsKey(neighbor.val) ) {
                     map.put(neighbor.val, neighbor);
                     stack.push(neighbor);

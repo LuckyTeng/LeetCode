@@ -11,7 +11,7 @@ public class SolutionCloneGraph {
     public Node cloneGraph(Node node) {
         if ( node == null ) return null;
 
-        if ( node.neighbors.size() == 0 ) return new Node(node.val);
+        if ( node.children.size() == 0 ) return new Node(node.val);
 
         Set<Node> set = new HashSet<>();
         Stack<Node> stack = new Stack<>();
@@ -33,14 +33,14 @@ public class SolutionCloneGraph {
        
             if ( ans == null ) ans = newNode;
 
-            for (Node neighbor : node.neighbors) {
+            for (Node neighbor : node.children) {
                 Node newNeighbor = null;
                 if ( !map.containsKey(neighbor.val) ) {
                     newNeighbor = new Node(neighbor.val);
                     map.put(newNeighbor.val, newNeighbor);
                 } else
                     newNeighbor = map.get(neighbor.val);
-                newNode.neighbors.add(newNeighbor);
+                newNode.children.add(newNeighbor);
                 if ( !set.contains(neighbor) ) {
                     set.add(neighbor);
                     stack.push(neighbor);
