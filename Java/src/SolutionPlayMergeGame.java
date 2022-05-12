@@ -46,11 +46,7 @@ public class SolutionPlayMergeGame {
         }
     }
 
-    public int whoMinMergeGame(List<Stack<Integer>> tiles) {
-        var t = new Tile();
-        int hash = t.hashCode();
-        List<Integer> temp = new ArrayList<>();
-        
+    public int whoMinMergeGame(List<Stack<Integer>> tiles) {    
         List<Integer[]> mergeIdx = new ArrayList<>();
  
         for (int i = 0; i < tiles.size() - 1; i++) {
