@@ -3,12 +3,11 @@ package test;
 import org.junit.Test;
 
 import src.Node;
-import src.SolutionNaryTreeLevelOrderTraversal;
 
 public class SolutionNaryTreeLevelOrderTraversal_SolutionTest {
     @Test
     public void testLevelOrder() {
-        var sol = new SolutionNaryTreeLevelOrderTraversal();
+
 
         Node root = new Node(1);
         root.children.add(new Node(3));
