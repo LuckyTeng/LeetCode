@@ -30,4 +30,16 @@ public class SolutionLongestLineofConsecutiveOneinMatrixTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void testLongestLine3() {
+        var sol = new SolutionLongestLineofConsecutiveOneinMatrix();
+
+        int[][] matrix = new int[][]{{0,1,0,1},{0,0,1,0},{0,1,0,0}};
+
+        var actual = sol.longestLine(matrix);
+        int expected = 3;
+
+        assertEquals(expected, actual);
+    }
 }

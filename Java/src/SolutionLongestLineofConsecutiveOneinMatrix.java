@@ -6,15 +6,21 @@ public class SolutionLongestLineofConsecutiveOneinMatrix {
         int rows = m.length;
         int cols = m[0].length;
 
-        int[][] dp = new int[rows*cols][3];
+        int[][] dp = new int[rows*cols][4];
 
         int ans = 0;
 
         for ( int j = 0; j < rows; j++ ) {
             for ( int i = 0; i < cols; i++ ) {
                 if ( m[j][i] == 1 ) {
-                    dp[j*cols+i][0] = dp[j*cols+i][1] = dp[j*cols+i][2] = 1;
+                    dp[j*cols+i][0] = dp[j*cols+i][1] = dp[j*cols+i][2] = dp[j*cols+i][3] = 1;
                     ans = Math.max(ans, 1);
+
+                    if ( i < cols - 1 && j > 0) {
+                        dp[j*cols+i][3] = dp[j*cols+i][3] + dp[(j-1)*cols + (i+1)][3];
+                        ans = Math.max(ans, dp[j*cols+i][3]);
+                    }
+
                     if ( j > 0 && i > 0 ) {
                         dp[j*cols+i][2] = dp[j*cols+i][2] + dp[(j-1)*cols + (i-1)][2];
                         ans = Math.max(ans, dp[j*cols+i][2]);
